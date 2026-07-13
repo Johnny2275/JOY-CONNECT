@@ -3,7 +3,7 @@ export default function FloatingWhatsApp() {
   const waLink = `https://wa.me/2349124053399?text=${encodeURIComponent(message)}`
 
   return (
-    
+    <a>
       href={waLink}
       target="_blank"
       rel="noopener noreferrer"
