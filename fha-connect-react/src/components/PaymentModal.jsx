@@ -101,9 +101,9 @@ export default function PaymentModal({ plan, onClose }) {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               placeholder="08031234567"
-              className="w-full border border-black/15 rounded-lg px-3.5 py-2.5 text-sm mb-2 focus:outline-none focus:border-cyan"
+              className="w-full border border-black/15 rounded-lg px-3.5 py-2.5 text-sm mb-2 text-ink bg-white focus:outline-none focus:border-cyan"
+              style={{ transform: 'translateZ(0)', WebkitAppearance: 'none' }}
             />
-
             {error && <p className="text-sm text-red-600 mb-3">{error}</p>}
 
             <button
