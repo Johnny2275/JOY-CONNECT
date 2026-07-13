@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import useReveal from '../hooks/useReveal'
-import { whatsappLink } from '../whatsapp'
+import PaymentModal from './PaymentModal'
 
 const plans = [
   {
@@ -29,16 +29,7 @@ const plans = [
   },
 ]
 
-function PlanCard({ plan }) {
-  const [label, setLabel] = useState(`Choose ${plan.name.toLowerCase()}`)
-
-  const handleClick = () => {
-    const message = `Hi FHA Connect, I'd like to subscribe to the ${plan.name} plan (${plan.price} / ${plan.periodLabel}). Please send payment details.`
-    setLabel('Opening WhatsApp…')
-    window.open(whatsappLink(message), '_blank', 'noopener')
-    setTimeout(() => setLabel(`Choose ${plan.name.toLowerCase()}`), 1600)
-  }
-
+function PlanCard({ plan, onSelect }) {
   return (
     <div
       className={`relative bg-navy2 border rounded-2xl p-8 transition-all hover:-translate-y-1 ${
@@ -68,14 +59,14 @@ function PlanCard({ plan }) {
         ))}
       </ul>
       <button
-        onClick={handleClick}
+        onClick={() => onSelect(plan)}
         className={`w-full text-center py-3 rounded-full font-semibold text-sm transition ${
           plan.featured
             ? 'bg-amber text-navy hover:brightness-105'
             : 'border border-white/25 text-white hover:border-white'
         }`}
       >
-        {label}
+        Choose {plan.name.toLowerCase()}
       </button>
     </div>
   )
@@ -84,6 +75,7 @@ function PlanCard({ plan }) {
 export default function Plans() {
   const [headRef, headIn] = useReveal()
   const [gridRef, gridIn] = useReveal()
+  const [selectedPlan, setSelectedPlan] = useState(null)
 
   return (
     <section id="plans" className="bg-navy text-white">
@@ -105,10 +97,12 @@ export default function Plans() {
           className={`grid grid-cols-1 md:grid-cols-3 gap-5 transition-all duration-700 ${gridIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}
         >
           {plans.map((p) => (
-            <PlanCard key={p.name} plan={p} />
+            <PlanCard key={p.name} plan={p} onSelect={setSelectedPlan} />
           ))}
         </div>
       </div>
+
+      {selectedPlan && <PaymentModal plan={selectedPlan} onClose={() => setSelectedPlan(null)} />}
     </section>
   )
 }
