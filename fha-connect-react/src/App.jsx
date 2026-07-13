@@ -8,6 +8,7 @@ import Voices from './components/Voices'
 import FAQ from './components/FAQ'
 import CTABand from './components/CTABand'
 import Footer from './components/Footer'
+import FloatingWhatsApp from './components/FloatingWhatsApp'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
       <FAQ />
       <CTABand />
       <Footer />
+      <FloatingWhatsApp />
     </div>
   )
 }
