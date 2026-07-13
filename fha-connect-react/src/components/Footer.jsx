@@ -1,4 +1,7 @@
 export default function Footer() {
+  const message = "Hi FHA Connect, I have a question about your Wi-Fi service."
+  const waLink = `https://wa.me/2349124053399?text=${encodeURIComponent(message)}`
+
   return (
     <footer className="bg-navy text-white/55 pt-16 pb-7 mt-0">
       <div className="max-w-[1120px] mx-auto px-6">
@@ -25,13 +28,18 @@ export default function Footer() {
           <div>
             <h4 className="font-mono text-[13px] uppercase tracking-wide text-white mb-4">Reach us</h4>
             <ul className="space-y-1.5">
-              <li><a href="#" className="hover:text-white text-sm">WhatsApp: 09124053399</a></li>
-              <li><a href="#" className="hover:text-white text-sm">FHA Lugbe, Abuja</a></li>
+              <li>
+                <a href={waLink} target="_blank" rel="noopener noreferrer" className="hover:text-white text-sm">
+                  WhatsApp: 0912 405 3399
+                </a>
+              </li>
+              <li><span className="text-sm">FHA Lugbe, Abuja</span></li>
             </ul>
           </div>
         </div>
         <div className="flex justify-between flex-wrap gap-2.5 pt-6 text-[12.5px]">
           <span>© 2026 FHA Connect. Community internet for FHA Lugbe.</span>
+          <span>Built on Starlink</span>
         </div>
       </div>
     </footer>
