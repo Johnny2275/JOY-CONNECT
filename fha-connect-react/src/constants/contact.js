@@ -1,3 +1,2 @@
-// src/constants/contact.js
-
 export const WHATSAPP_NUMBER = "2349124053399";
+export const PHONE_NUMBER = "0912 405 3399";
