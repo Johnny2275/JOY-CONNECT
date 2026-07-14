@@ -1,7 +1,9 @@
 export default function FloatingWhatsApp() {
   const message = "Hi FHA Connect, I'd like to ask about your Wi-Fi service."
-  const waLink = `https://wa.me/2349124053399?text=${encodeURIComponent(message)}`
 
+  import { WHATSAPP_NUMBER } from "../constants/contact";
+  const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  
   return (
     <a
       href={waLink}
