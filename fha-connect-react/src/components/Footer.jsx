@@ -60,7 +60,6 @@ export default function Footer() {
 
         <div className="flex justify-between flex-wrap gap-2.5 pt-6 text-[12.5px]">
           <span>© 2026 FHA Connect. Community internet for FHA Lugbe.</span>
-          <span>Built on Starlink</span>
         </div>
       </div>
     </footer>
