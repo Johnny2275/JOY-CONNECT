@@ -1,2 +1,2 @@
-export const WHATSAPP_NUMBER = "2349124053399";
-export const PHONE_NUMBER = "0912 405 3399";
+export const WHATSAPP_NUMBER = "2348131240619";
+export const PHONE_NUMBER = "08131240619";
