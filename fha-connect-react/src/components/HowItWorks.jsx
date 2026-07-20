@@ -4,7 +4,7 @@ const steps = [
   {
     num: '01',
     title: 'Connect to the network',
-    desc: 'Join "FHA Connect" from your Wi-Fi list. A page opens automatically — no app to download.',
+    desc: 'Join "JOY-CONNECT" from your Wi-Fi list. A page opens automatically — no app to download.',
   },
   {
     num: '02',
