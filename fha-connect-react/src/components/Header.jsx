@@ -9,7 +9,7 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2 font-display font-semibold text-lg text-white">
             <span className="w-2.5 h-2.5 rounded-full bg-cyan animate-pulseDot" />
-            FHA Connect
+            JOY-CONNECT
           </div>
           <div className="hidden sm:block font-mono text-[11.5px] text-white pl-4 border-l border-white/10">
             {clock}
