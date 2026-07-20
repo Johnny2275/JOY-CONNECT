@@ -15,7 +15,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-[17px] leading-relaxed text-white/70 max-w-[460px] mt-5 mb-7">
-            FHA Connect brings Starlink internet to your compound — no more running data
+            JOY-CONNECT brings Starlink internet to your compound — no more running data
             every week, no more waiting on NEPA for a signal. Just steady Wi-Fi, shared
             fairly, priced for the street.
           </p>
