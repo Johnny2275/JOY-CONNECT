@@ -1,7 +1,7 @@
 import { WHATSAPP_NUMBER, PHONE_NUMBER } from "../constants/contact";
 
 export default function Footer() {
-  const message = "Hi FHA Connect, I have a question about your Wi-Fi service.";
+  const message = "Hi JOY-CONNECT, I have a question about your Wi-Fi service.";
 
   const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
