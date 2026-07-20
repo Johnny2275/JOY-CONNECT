@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 font-display font-semibold text-lg text-white mb-3.5">
               <span className="w-2.5 h-2.5 rounded-full bg-cyan" />
-              FHA Connect
+              JOY-CONNECT
             </div>
 
             <p className="max-w-[280px] text-sm leading-relaxed">
@@ -59,7 +59,7 @@ export default function Footer() {
         </div>
 
         <div className="flex justify-between flex-wrap gap-2.5 pt-6 text-[12.5px]">
-          <span>© 2026 FHA Connect. Community internet for FHA Lugbe.</span>
+          <span>© 2026 JOY-CONNECT. Community internet for FHA Lugbe.</span>
         </div>
       </div>
     </footer>
